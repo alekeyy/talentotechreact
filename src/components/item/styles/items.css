@@ -1,0 +1,49 @@
+/*div>
+  <div className="product">
+            <img className="img-thumbnail product-img"src={imagen}></img>
+        </div>
+        <h3 className="product-title">{nombre}</h3>
+        <p className="product-t
+    */
+
+.product {
+    display: flex;
+    max-width: 400px;
+    max-height: 400px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.product > div {
+    align-items: center;
+    align-content: center;
+    padding: 5px;
+}
+
+.product-img {
+    max-height: 200px;
+    max-width: 200px;
+}
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+}
+
+.product-detail {
+    max-width: 700px;
+    max-height: none;
+    gap: var(--space-4);
+}
+
+.product-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+}
+
+@media (max-width: 600px) {
+    .product {
+        flex-direction: column;
+    }
+}

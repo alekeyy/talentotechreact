@@ -1,0 +1,5 @@
+[
+    {"id": 1, "nombre": "RTX 3050", "precio":"3000", "imagen": "https://www.maximus.com.ar/Temp/App_WebSite/App_PictureFiles/Items/912-V812-060.jpg"},
+    {"id": 2, "nombre": "RTX 3050", "precio":"4500", "imagen": "https://statics.qloud.com.ar/318/06-11-2024-03-11-48_11.png"},
+    {"id": 3, "nombre": "RTX 3050", "precio":"5000", "imagen": "https://bioscomputacion.com.ar/img/Public/1161/36078-producto-0000000000415069674930415069.jpg"}
+]

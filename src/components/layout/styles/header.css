@@ -1,0 +1,53 @@
+/*
+ * Header chrome — matches the wireframe's exact proportions:
+ * 18px/34px padding, 28px gap, 2px solid border-bottom in ink.
+ * Apply `.site-header` to the <header>, `.site-header-brand` to the
+ * logo/wordmark link, `.site-header-search` to a wrapper around your
+ * search <input class="input">. The nav itself is in Nav.css.
+ */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  padding: 18px 34px;
+  background: var(--color-bg);
+  border-bottom: 2px solid var(--color-text);
+}
+
+.site-header-brand {
+  font-family: var(--font-heading);
+  font-weight: var(--font-heading-weight); /* Caprasimo only ships 400 —
+    it already reads as bold, so don't force font-weight: 700 here */
+  font-size: 20px;
+  letter-spacing: -0.02em;
+  color: var(--color-text);
+  text-decoration: none;
+  margin-right: auto;
+}
+
+.site-header-search {
+  flex: 0 1 230px;
+}
+
+.site-header-search .input {
+  height: 34px;
+  min-height: 34px;
+  border-radius: 999px;
+  font-size: 12.5px;
+}
+
+@media (max-width: 720px) {
+  .site-header {
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .site-header-search {
+    order: 3;
+    flex-basis: 100%;
+  }
+}

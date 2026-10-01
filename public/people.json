@@ -1,0 +1,6 @@
+[
+    {"id": 1, "name": "Big Boss", "email": "fakemail@fake.com", "position": "CEO", "photo": ""},
+    {"id": 2, "name": "Big Brain", "email": "fakemail@fake.com", "position": "CTO", "photo": ""},
+    {"id": 3, "name": "Rindongo Mondongo", "email": "fakemail@fake.com", "position": "IT Manager", "photo": ""},
+    {"id": 4, "name": "Aquerina Aquafina", "email": "fakemail@fake.com", "position": "HR Manager", "photo": ""}
+]

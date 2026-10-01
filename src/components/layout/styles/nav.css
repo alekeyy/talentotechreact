@@ -1,0 +1,77 @@
+/*
+ * Primary nav — Home / Products / Contact / Cart.
+ * Apply `.site-nav` to the <nav>, `.site-nav-list` to the <ul>, and mark
+ * the active link with aria-current="page" (styled below) rather than a
+ * separate "active" class.
+ */
+
+.site-nav-list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-nav-list a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  opacity: 0.72; /* stands in for the wireframe's muted --soft ink */
+  transition: opacity 0.15s ease, color 0.15s ease;
+}
+
+.site-nav-list a:hover {
+  opacity: 1;
+  color: var(--color-accent);
+}
+
+.site-nav-list a[aria-current='page'] {
+  opacity: 1;
+  color: var(--color-accent);
+}
+
+/* Cart — styled as the wireframe's small pill (`.pill.sm`):
+   1.5px border, 4px/13px padding, 999px radius, 12.5px type. */
+.site-nav-cart {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 13px !important;
+  font-size: 12.5px !important;
+  border: 1.5px solid var(--color-text);
+  border-radius: 999px;
+}
+
+.site-nav-cart:hover {
+  border-color: var(--color-accent);
+}
+
+.site-nav-cart-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 16px;
+  height: 16px;
+  padding: 0 4px;
+  border-radius: 999px;
+  background: var(--color-accent);
+  color: var(--color-bg);
+  font-size: 10.5px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
